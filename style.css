@@ -1,0 +1,80 @@
+html, body {
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12pt;
+  line-height: 1.35;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  margin-top: 3vw;
+  margin-bottom: 6vw;
+}
+
+img {
+  width: 10vw;
+  margin-bottom: 1%;
+}
+
+.bigger-img {
+  width: 40%;
+}
+
+h1 {
+  font-family: 'Bookman';
+  font-size: 4em;
+  color: red;
+  text-shadow:
+    -1px -1px 0 #FFF,
+     1px -1px 0 #FFF,
+     -1px 1px 0 #FFF,
+      1px 1px 0 #FFF;
+  width: 60%;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: inherit;
+}
+
+.container {
+  width: 60%;
+}
+
+a {
+  color: #900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  position: relative;
+}
+
+a[data]:hover:after {
+  content: attr(data);
+  font-size: 1.8em;
+  line-height: 1.15em;
+  width: 30vw;
+  padding: .5vw;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  background-color: blue;
+}
+
+.sidebar {
+  width: 20vw;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 10vw;
+  right: 3vw;
+  /* background-color: blue; */
+}
+
+.sidebar img {
+  margin-bottom: 25vw;
+}
